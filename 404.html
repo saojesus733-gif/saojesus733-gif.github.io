@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>跳转中 / Redirecting&hellip;</title>
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:40em;margin:15vh auto;padding:0 1em;line-height:1.6;color:#24292f}</style>
+</head>
+<body>
+<p>本站已迁移到 <a href="https://weicode703.github.io/interview-notes/">https://weicode703.github.io/interview-notes/</a>，正在跳转&hellip;</p>
+<script>
+(function () {
+  var p = location.pathname;
+  if (p.indexOf('/interview-notes/') === 0 || p === '/interview-notes') {
+    location.replace('https://weicode703.github.io' + p + location.search + location.hash);
+  } else {
+    location.replace('https://weicode703.github.io/interview-notes/');
+  }
+})();
+</script>
+</body>
+</html>
